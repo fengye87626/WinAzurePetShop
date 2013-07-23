@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="AzurePetShop" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-03.2.0">
+  <Role name="PetShopWebRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=niujiale;AccountKey=wXNl64OFreq+3CHaJbodKPR8wfQfgoQMsCygyBLNL9XF0ekAlX2KbQmymdoZD9t3WG5PSRmS7dzPvjoohEuiEQ==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="niujiale" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEGIeb+ZJ1OG7SMjH1w0OMNMwDQYJKoZIhvcNAQEBBQAEggEAY2CvypinxuWEE5+J4hrJxAYNy3CI5w5REV/PTJXffHQWYRzfiK0njU2jbgC1H5TYjtnGQjUkgVLn4Gd4ZXL9eBrzZyyzdlRagReQCUinBxin609oy6aCBzCY8fPzgKsft5QpcY5pV52ORCDShrA1+OjD5TomzkPSya7FbTvrsHCoX0c1TNyZVT8+SOTFfQ/Wg5I3WhUKgxB6zDxEQu3EQSUlnbcfh3iVmxfeqDWQe+pl4U/RgzfVxzoigq5GXh4TYFojJ/9JFJN8E5KC2weTzlHLNhSr/+JemPML0NfgBxv43akhaAUuqHafHbfYDl65KevJ8kZ6XaEmL55YdLpB2TAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECF3ALPr4b0degBCqo/l9oqWRkAc7p55TViUo" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2014-05-27T23:59:59.0000000+08:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="83260C0EC22832CA5969B1C038FD99A4D80D0D0C" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
